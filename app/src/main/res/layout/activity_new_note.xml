@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kahyalar.midtermproject.question2.NewNoteActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Title.."
+        android:ems="10"
+        android:id="@+id/note_title"
+        android:padding="15dp"
+        android:background="#3144a6"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:inputType="textMultiLine"
+        android:ems="15"
+        android:id="@+id/note_text"
+        android:hint="Add New Note..."
+        android:textAlignment="center"
+        android:background="#7ca5fc"/>
+
+    <Button
+        android:text="Kaydet.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSave"
+        android:layout_gravity="center"/>
+</LinearLayout>

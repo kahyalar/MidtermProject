@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kahyalar.midtermproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".question1.MainActivity_Q1"
+            android:icon="@mipmap/question1"
+            android:label="Question 1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".question2.MainActivity_Q2"
+            android:icon="@mipmap/question2"
+            android:label="Question 2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".question2.NewNoteActivity" />
+        <activity android:name=".question2.NoteDetailsActivity" />
+        <activity android:name=".question1.LoginActivity" />
+        <activity android:name=".question1.SignupActivity" />
+        <activity android:name=".question1.WishMainActivity" />
+        <activity android:name=".question1.AddWishActivity" />
+        <activity android:name=".question1.WishDetailsActivity"></activity>
+    </application>
+
+</manifest>

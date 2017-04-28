@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wish_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kahyalar.midtermproject.question1.WishDetailsActivity">
+
+    <TextView
+        android:text="WishTitle"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wishTitle_WishDetails"
+        android:background="#7f9618"/>
+
+    <TextView
+        android:text="WishText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/wishText_WishDetails"
+        android:background="#9c6739" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/pnlRefresh_WishDetails"
+        android:background="#399c9c">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_WishDetails"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:text="Grant Wish!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGrantWish" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#66d1d1"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/addComment_WishDetails" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btnCancel_WishDetails"/>
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grant!"
+            android:id="@+id/btnGrantText_WishDetails"/>
+    </LinearLayout>
+
+</LinearLayout>
